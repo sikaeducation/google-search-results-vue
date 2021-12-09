@@ -1,0 +1,7 @@
+{
+  "name": "cypress-testing-dependencies",
+  "version": "1.0.0",
+  "devDependencies": {
+    "cypress": "^4.0.2"
+  }
+}

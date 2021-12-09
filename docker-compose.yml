@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  frontend:
+    build:
+      context: ./google.com
+    ports:
+    - "8080:8080"
+    volumes:
+    - "./google.com:/app"
+    command: /bin/sh -c "npm install && npm run serve"
+

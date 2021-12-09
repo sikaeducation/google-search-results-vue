@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+  cypress:
+    ipc: host
+    image: "cypress/included:6.0.0"
+    depends_on:
+      - frontend
+    environment:
+      - CYPRESS_baseUrl=http://frontend:8080
+    working_dir: /e2e
+    volumes:
+      - ./features:/e2e
+    entrypoint: /bin/sh -c "npm install && cypress run -q --project /e2e"

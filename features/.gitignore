@@ -1,0 +1,4 @@
+node_modules
+tests/videos/**/*
+core
+tests/screenshots/
